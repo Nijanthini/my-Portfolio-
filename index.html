@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nijanthini — Software Engineering Student & Developer</title>
+<meta name="description" content="Portfolio of Nijanthini, a first-year Software Engineering student passionate about web, AI, and design." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader"><div class="loader-ring"></div></div>
+
+  <!-- Scroll progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <a href="#home" class="logo">N.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>Hi, I'm <span class="text-gradient">Nijanthini</span></h1>
+          <p class="typed"><span id="typed"></span><span class="caret">|</span></p>
+          <p class="hero-desc">&nbsp;</p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">About Me</a>
+            <a href="#" class="btn btn-ghost"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Nijanthini" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nijanthini-selvakumar" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="hero-photo reveal">
+          <div class="photo-ring">
+            <img src="https://i.postimg.cc/cLMRH61L/It-s-me.jpg" alt="Nijanthini" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Me</h2>
+          <p class="subtitle">I'm a Software Engineering student with a passion for building things and a growing focus on Artificial Intelligence. I love turning ideas into code — whether it's web apps, algorithms, or AI-powered tools. I'm on a journey to become an AI Engineer, exploring machine learning, neural networks, and how we can use AI to build better products. I believe the best engineers are curious first, technical second.</p>
+        </div>
+        <div class="about-grid reveal">
+          <div class="glass card">
+            <h3>My Journey</h3>
+            <p>From my first "Hello, World!" to building full-stack apps, I've been driven by curiosity. Every project teaches me something new about design, systems, and people.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p class="subtitle">Tools and languages I work with.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="glass card reveal">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li><i class="fa-brands fa-python"></i> Python</li>
+              <li><i class="fa-brands fa-java"></i> Java</li>
+            </ul>
+          </div>
+          <div class="glass card reveal">
+            <h3>Frameworks</h3>
+            <ul class="chips">
+              <li><i class="fa-brands fa-react"></i> React</li>
+              <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+            </ul>
+          </div>
+          <div class="glass card reveal">
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li><i class="fa-brands fa-git-alt"></i> Git</li>
+              <li><i class="fa-brands fa-github"></i> GitHub</li>
+              <li><i class="fa-solid fa-code"></i> VS Code</li>
+              <li><i class="fa-solid fa-cube"></i> IntelliJ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Education</h2>
+          <p class="subtitle">My academic path so far.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="glass card">
+              <div class="period">2025 — Present</div>
+              <h3>BSc in Software Engineering</h3>
+              <p class="place">SLTC Research University</p>
+              <p>Currently in Year 1. Building strong foundations in programming, and systems.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="glass card">
+              <div class="period">2024</div>
+              <h3>Advanced Level</h3>
+              <p class="place">BT/Vivekananda Ladies' College</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Certificates</h2>
+          <p class="subtitle">Courses and workshops I've completed.</p>
+        </div>
+        <div class="cert-grid">
+          <div class="glass card reveal">
+            <h3>Python for Beginners</h3>
+            <p class="issuer">University of Moratuwa</p>
+            <p class="year">2026</p>
+          </div>
+          <div class="glass card reveal">
+            <h3>Java for Beginners</h3>
+            <p class="issuer">SimpliLearn</p>
+            <p class="year">2026</p>
+          </div>
+          <div class="glass card reveal">
+            <h3>SAT VISION</h3>
+            <p class="issuer">Workshop</p>
+            <p class="year">2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="glass card reveal">
+            <div class="info-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <p class="label">Email</p>
+                <p>nijanthi25@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <p class="label">Location</p>
+                <p>Batticaloa, Sri Lanka</p>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/Nijanthini" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/nijanthini-selvakumar" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <form id="contactForm" class="glass card reveal">
+            <label>Name <input type="text" required /></label>
+            <label>Email <input type="email" required /></label>
+            <label>Message <textarea rows="4" required></textarea></label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nijanthini. Built with curiosity.</p>
+      <div class="socials">
+        <a href="https://github.com/Nijanthini" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nijanthini-selvakumar" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
